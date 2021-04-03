@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    overflow-x: hidden;
+}
+main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 70vw;
+
+
+    .card {
+        height: 100%;
+        padding: 5em;
+
+
+        .card-title {
+            color: hsl(0, 0%, 95%);
+            font-size: 3em;
+            font-family: 'Big Shoulders Display', sans-serif;
+            padding: 1em 0;
+            text-transform: uppercase;
+        }
+
+
+        .card-desc {
+            font-size: 1.3em;
+            letter-spacing: 1px;
+            color: hsla(0, 0%, 100%, 0.75);
+        }
+
+
+        .learn-more-button {
+            margin-top: 10em;
+            padding: 1em 3em;
+            border: 3px solid hsl(0, 0%, 95%);
+            border-radius: 25em;
+            background-color: hsl(0, 0%, 95%);
+            font-size: 1em;
+            font-family: inherit;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: .3s ease-out;
+
+
+            &:hover {
+                background-color: transparent;
+                color: hsl(0, 0%, 95%);
+            }
+        }
+
+
+        .btn-1 {
+            color: hsl(31, 77%, 52%);
+        }
+
+
+        .btn-2 {
+            color: hsl(184, 100%, 22%);
+        }
+
+
+        .btn-3 {
+            color: hsl(179, 100%, 13%);
+        }
+    }
+
+
+    .card-1 {
+        background-color: hsl(31, 77%, 52%);
+    }
+
+
+    .card-2 {
+        background-color: hsl(184, 100%, 22%);
+    }
+
+
+    .card-3 {
+        background-color: hsl(179, 100%, 13%);
+    }
+}
+
+@media only screen and (max-width: '375px') {
+    body {
+        font-size: 10px;
+    }
+    .cards {
+        flex-direction: column;
+        width: 90vw;
+    }
+}

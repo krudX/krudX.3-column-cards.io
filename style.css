@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1em;
+  width: 70vw;
+}
+
+.cards .card {
+  height: 100%;
+  padding: 5em;
+}
+
+.cards .card .card-title {
+  color: #f2f2f2;
+  font-size: 3em;
+  font-family: 'Big Shoulders Display', sans-serif;
+  padding: 1em 0;
+  text-transform: uppercase;
+}
+
+.cards .card .card-desc {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cards .card .learn-more-button {
+  margin-top: 10em;
+  padding: 1em 3em;
+  border: 3px solid #f2f2f2;
+  border-radius: 25em;
+  background-color: #f2f2f2;
+  font-size: 1em;
+  font-family: inherit;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.cards .card .learn-more-button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.cards .card .btn-1 {
+  color: #e38826;
+}
+
+.cards .card .btn-2 {
+  color: #006970;
+}
+
+.cards .card .btn-3 {
+  color: #004241;
+}
+
+.cards .card-1 {
+  background-color: #e38826;
+}
+
+.cards .card-2 {
+  background-color: #006970;
+}
+
+.cards .card-3 {
+  background-color: #004241;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 10px;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
